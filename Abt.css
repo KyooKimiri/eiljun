@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bg2.jpg);
+    background-size: cover
+    padding: 59px;
+}
+
+/* Top navigation container */
+.topnav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* Hamburger menu icon */
+.hamburger-menu {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 14px 16px;
+    z-index: 11;
+}
+
+/* Menu items container */
+.menu-items {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 10;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    pointer-events: none; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-items.open {
+    opacity: 1;
+    transform: translateY(0); 
+    pointer-events: auto;
+}
+
+.menu-items a {
+    display: block;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-items a:hover {
+    background-color: rgb(78, 77, 77);
+}
+
+
+
+.abt {
+    padding: 40px 20px;
+    background-color: transparent; 
+    max-width: 800px;
+    margin: 100px auto;
+    border-radius: 8px;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.abt p {
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0; 
+}
+
+
+
+

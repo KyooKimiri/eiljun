@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    padding: 59px;
+}
+
+/* Top navigation container */
+.topnav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* Hamburger menu icon */
+.hamburger-menu {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 14px 16px;
+    z-index: 11;
+}
+
+/* Menu items container */
+.menu-items {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 10;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    pointer-events: none; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-items.open {
+    opacity: 1;
+    transform: translateY(0); 
+    pointer-events: auto;
+}
+
+.menu-items a {
+    display: block;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-items a:hover {
+    background-color: rgb(78, 77, 77);
+}
+
+.components {
+    text-align: center;
+    
+}
+.components h2 {
+  background-color: black;
+  font-size: medium;
+  
+}
+.img {
+  border: 7px solid rgb(36, 32, 32);
+  
+}
+
+.img img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.img img:hover {
+    transform: scale(1.1)
+}
+
+
+.cpu {
+    position: absolute;
+    top: 19vh;
+    left: 5vh;
+}
+
+
+.mtb {
+    position: absolute;
+    top: 19vh;
+    left: 75vh;
+}
+
+.gpu {
+    position: absolute;
+    top: 19vh;
+    right: 5vh;
+}
+
+.ram {
+    position: absolute;
+    top: 60vh;
+    right:30vh;
+}
+
+.ps {
+    position: absolute;
+    top: 60vh;
+    left: 35vh;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
